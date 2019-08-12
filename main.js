@@ -4,10 +4,12 @@ const search = document.getElementById("search");
 
 const submit = document.getElementById("submit");
 
-submit.addEventListener('click', function() {
+function imgs() {
     images.innerHTML = "";
     getData(search.value);
-});
+}
+
+submit.addEventListener('click', imgs);
 
 function getData(query){
     fetch('http://api.giphy.com/v1/gifs/search?q='+query+'&api_key=AWPmNeZQjU5gVEjv9qGiaCOl3PnvX63W&limit=5')

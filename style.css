@@ -13,3 +13,11 @@ body {
 header {
     height: 20%;
 }
+
+div {
+    background-color: black;
+}
+
+main {
+    background-color: gray;
+}
